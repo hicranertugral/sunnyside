@@ -15,8 +15,8 @@ const Main = () => {
   return (
     <main className="main">
       <section id="brand">
-        <div className="grid-two-columns">
-          <div class="content">
+        <div className="flex">
+          <div className="column content padding">
             <h3>Transform your brand</h3>
             <p>
               We are a full-service creative agency specializing in helping
@@ -29,14 +29,15 @@ const Main = () => {
               </a>
             </span>
           </div>
-          <img src={eggImg} alt=""></img>
+          <div className="column">
+            <img src={eggImg} alt=""></img>
+          </div>
         </div>
       </section>
       <section id="stand">
-        {" "}
-        <div className="grid-two-columns">
-          <img src={standImg} alt=""></img>
-          <div class="content">
+        <div className="flex reverse">
+          
+          <div className="column content padding">
             <h3>Stand out to the right audience</h3>
             <p>
               Using a collaborative formula of designers, researchers,
@@ -49,11 +50,14 @@ const Main = () => {
               </a>
             </span>
           </div>
+          <div className="column">
+            <img src={standImg} alt=""></img>
+          </div>
         </div>
       </section>
       <section id="graphic-design">
-        <div className="grid-two-columns">
-          <div className="column-1">
+        <div className="flex">
+          <div className="two-column-img">
             <img src={cheryyImg} alt=""></img>
             <div className="two-images-column-content">
               <h3>Graphic design</h3>
@@ -64,7 +68,7 @@ const Main = () => {
               </p>
             </div>
           </div>
-          <div className="column-2">
+          <div className="two-column-img">
             <img src={madarinImg} alt=""></img>
             <div className="two-images-column-content">
               <h3>Photography</h3>
@@ -79,7 +83,7 @@ const Main = () => {
       <section id="client-testimonials">
         <div className="client-reviews">
           <h3>Client Testimonials</h3>
-          <div className="grid-three-columns">
+          <div className="flex">
             <div className="client">
               <img src={client1} alt="" />
               <p>
@@ -118,11 +122,15 @@ const Main = () => {
         </div>
       </section>
       <section id="images">
-        <div className="grid-four-columns">
-          <img src={milkbottlesImg} alt=""></img>
-          <img src={orangeImg} alt=""></img>
-          <img src={coneImg} alt=""></img>
-          <img src={sugarcubesImg} alt=""></img>
+        <div className="flex-grid">
+          <div className="row">
+           
+              <img src={milkbottlesImg} alt=""></img>
+              <img src={orangeImg} alt=""></img>
+              <img src={coneImg} alt=""></img>
+              <img src={sugarcubesImg} alt=""></img>
+            
+          </div>
         </div>
       </section>
     </main>
